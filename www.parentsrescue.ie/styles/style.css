@@ -1,0 +1,642 @@
+body
+{
+	width: 100%;
+	margin: 0 auto;
+	/* Background pattern from Toptal Subtle Patterns */
+	background: url(../images/background-kids.jpg) repeat;
+	font-family: 'Cabin Sketch', cursive, helvetica, arial;
+}
+
+/*menu*/	
+nav
+{
+	text-align: center;
+	font-weight: 600;
+	font-size: 18px;
+	background-color: #2D4B93;
+	opacity: 0.9;
+}
+
+.sticky
+{
+	width: 100%;
+	position: fixed; /*means that the menu bar is in the same position (in this case on the top left screen - position x(left:0) and y(top:0)) */
+	left: 0;
+	top: 0;
+	z-index: 100; 
+	background-color: #2D4B93;
+	opacity: 0.9;
+}
+
+.menu a
+{
+	text-decoration: none;
+	color: #E89E12;
+}
+
+.menu
+{
+	margin: 0 auto;
+	padding: 10px 0 10px 0;
+	line-height: 200%;
+}
+
+.listmenu
+{
+	display: inline-block;
+	margin: 5px 10px;
+	padding: 0 50px;
+	min-width: 50px;
+	border-bottom: 3px double #E89E12;
+	border-top: 3px double #E89E12;
+	transition: transform 0.4s ease-in-out;
+}
+
+.listmenu:hover
+{
+	background-color: #0F257F;
+	cursor: pointer;
+	-webkit-transform: scale(1.4);
+	-ms-transform: scale(1.4);
+	transform: scale(1.4);
+}
+
+/*logo*/
+.logo
+{	 
+	max-width: 90%;
+    height: 150px;
+	display: block;
+	margin: 0 auto;
+	padding-top: 20px;
+	}
+	
+/*slider*/
+#container
+{
+	max-width: 900px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	border: 10px double #E89E12;
+	background-color: #2D4B93;
+}
+
+#slideshow
+{
+	width: 80%;
+	margin: 0 auto;
+	height: 350px;
+	border: 10px double #E89E12;
+	background-color: #2D4B93;
+}
+
+#slideshow img
+{
+	height: 350px;
+	width: auto;
+	text-align: center;
+}
+
+/*4boxes with gallery*/
+#content
+{
+	max-width: 900px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+#content a
+{
+	text-decoration: none;
+	color: #2D4B93;
+}
+
+.square
+{
+	display: inline-block;
+	width: 20%;
+	background-color: #E89E12;
+	border: 10px double #2D4B93;
+	padding: 5px;
+	margin: 5px;
+	transition: transform 0.4s ease-in-out;
+}
+
+.square:hover
+{
+	background-color: #2D4B93;
+	border: 10px double #E89E12;
+	color: #E89E12;
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+/*footer*/
+#footer
+{
+	background-color: #2D4B93;
+	opacity: 0.9;
+	margin-top: 30px;
+	padding: 15px 30px;
+	color: #E89E12;
+	overflow: hidden;
+}
+
+.bold
+{
+	color: #E89E12;
+	text-decoration: none;
+}
+
+.bold:hover
+{
+	color: #fff;
+}
+
+#footer > a
+{
+	font-size: 20px;
+	margin-left: 15px;
+	float: right;
+	color: #E89E12;
+}
+
+#footer > a:hover
+{
+	color: #fff;	
+}
+
+/*contact page*/
+.contact
+{
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+    max-width: 900px;
+	border: 10px double #2D4B93;
+	background-color: #E89E12;
+	color: #0F257F;
+	overflow: hidden;
+}
+
+.contact-text
+{
+	width: 100%;
+	height: 45px;
+	font-size: 32px;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.contact-address
+{
+	float: left;
+	width: 30%;
+	margin-left: 20px;
+	overflow: hidden;
+}
+
+.contact-address  a
+{
+	color: #0F257F;
+	text-decoration: none;
+	padding-right: 20px;
+}
+
+.contact-address a:hover
+{
+	color: #fff;	
+}
+
+.contact-form
+{
+	float: left;
+	width: 60%;
+}
+
+.contact-form textarea
+{
+	width: 100%;
+	background-color: #2D4B93;
+	color: #E89E12;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: 'Cabin Sketch', cursive;
+	padding: 3px;
+	margin-bottom: 10px;
+}
+
+.contact-form input
+{
+	width: 100%;
+	background-color: #2D4B93;
+	color: #E89E12;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: 'Cabin Sketch', cursive;
+	padding: 3px;
+	margin-bottom: 10px;
+}
+
+.contact-form input[type=submit]
+{
+	width: 50%;
+	margin-top: 20px;
+	margin-left: 25%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	cursor: pointer;
+	transition: transform 0.4s ease-in-out;
+}
+
+.contact-form input[type=submit]:hover
+{
+	background-color: #0F257F;
+	color: #E89E12;
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.googlemap 
+ {
+	clear: both;
+    position: relative;
+	margin: 0 auto;
+    max-width: 900px;
+	max-height: 300px;
+    overflow: hidden;
+	border: 10px double #E89E12;
+	background-color: #2D4B93;
+}
+	
+.googlemaps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+	
+/*our team page*/
+#staff 
+{
+	max-width: 900px;
+	margin: 0 auto;
+	background-color: #2D4B93;
+	overflow: hidden;
+	border: 10px double #E89E12;
+}
+
+#staff > h2
+{
+	text-align: center;
+	color: #E89E12;	
+}
+
+.staff-box
+{
+	display: inline-block;
+	margin: 21px;
+	width: 400px;
+	height: 200px;
+	background-color: #071340;
+	border: 3px solid #E89E12;
+	transition: transform 0.4s ease-in-out;
+	color: #E89E12;
+	font-size: 0.9em;
+}
+
+.staff-box:hover
+{
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.staff-photo
+{
+	float: left;
+	width: 35%;
+	height: 200px;
+}
+
+.staff-info
+{
+	float: left;
+	width: 63%;
+	padding: 1%;
+	height: 96%;
+	background-color: #0F257F;
+	font-size: 0.8em;
+}
+
+.staff-info > table td, tr
+{ 
+	padding: 3px;
+	border-bottom: 1px dashed #E89E12;
+}
+
+.staff-info a
+{ 
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/*send_form page*/
+.sent_form
+{
+	width: 60%;
+	margin: 10px auto;
+	padding: 10px;
+	text-align: center;
+	font-family: 'Cabin Sketch', cursive, helvetica, arial;
+	border: 10px double #E89E12;
+}
+
+.sent_form2
+{
+	width: 20%;
+	margin: 20px auto;
+	padding: 20px;
+	text-align: center;
+	font-size: 95%;
+	font-family: 'Cabin Sketch', cursive, helvetica, arial;
+	background-color: #E89E12;
+}
+
+.sent_form2:hover
+{
+	background-color: #2D4B93;
+	color: #fff;
+}
+
+.link_form a
+{
+	text-decoration:none;
+	color: #000;
+}
+
+/*about page*/
+#about
+{
+	max-width: 900px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	border: 10px double #2D4B93;
+	background-color: #E89E12;
+	color: #0F257F;
+}
+
+#about h1
+{
+	text-align: center;
+	margin-top: 15px;
+}
+
+#about > table
+{
+	width: 98%;
+	margin: 3px 3px;
+	padding: 5px;
+	text-align: justify;
+	border-top: 2px dashed #2D4B93;
+}
+
+#about > table th, td
+{
+	padding: 10px 2px 10px 2px;
+	border-bottom: 2px dashed #2D4B93;
+}
+
+#about a 
+{
+	text-decoration: none;
+	color: #0F257F;
+}
+
+#about a:hover
+{
+	color: #fff;
+}
+
+/*service page*/
+.service
+{
+	max-width: 900px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	border: 10px double #E89E12;
+	background-color: #2D4B93;
+	color: #E89E12;
+}
+
+.service h1
+{
+	text-align: center;
+	margin-top: 15px;
+}
+
+.service-form
+{
+	max-width: 900px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	padding-bottom: 50px;
+	border: 10px double #2D4B93;
+	background-color: #E89E12;
+	color: #0F257F;
+}
+
+.service-form h3
+{
+	text-align: center;
+	margin-top: 15px;
+}
+
+.request-form
+{
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.request-form select
+{
+	width: 95%;
+	background-color: #0F257F;
+	color: #E89E12;
+	padding-left: 5px;
+	margin-bottom: 10px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+}
+
+.input-radio
+{
+	width: 95%;
+}
+
+.input-radio td
+{
+	border-bottom: none;
+	background-color: #0F257F;
+	padding: 10px;
+	text-align: center;
+	color: #E89E12;
+	border: 2px solid #fff;
+	border-radius: 5px;
+}
+
+.request-form textarea
+{
+	width: 94%;
+	background-color: #0F257F;
+	color: #E89E12;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: 'Cabin Sketch', cursive;
+	padding: 3px;
+	margin-bottom: 10px;
+}
+
+.request-form input
+{
+	width: 94%;
+	background-color: #0F257F;
+	color: #E89E12;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: 'Cabin Sketch', cursive;
+	padding: 3px;
+	margin-bottom: 10px;
+}
+
+.request-form input[type=submit]
+{
+	width: 50%;
+	margin-top: 20px;
+	margin-left: 25%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	cursor: pointer;
+	transition: transform 0.4s ease-in-out;
+}
+
+.request-form input[type=submit]:hover
+{
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.service > table
+{
+	width: 98%;
+	margin: 3px 3px;
+	padding: 5px;
+	text-align: justify;
+	border-top: 2px dashed #E89E12;
+}
+
+.service > table td, th
+{
+	padding: 10px 2px 10px 2px;
+	border-bottom: 2px dashed #E89E12;
+}
+
+/*gallery page*/
+#gallery
+{
+	background: #2D4B93;
+	display: flex; /* makes it easier to design flexible layout structure without using float or positioning*/
+	flex-wrap: wrap; /*The flex-wrap property specifies whether the flex items should wrap or not. Here the wrap value specifies that the flex items will wrap if necessary*/
+	justify-content: space-around; /*The justify-content property is used to align the flex items*/
+	padding: 20px;
+	border: 10px double #E89E12;
+	overflow: hidden;
+	margin: 0 20px 20px 20px;
+}
+
+.h1-gallery
+{
+	width: 50%;
+	margin: 0 auto;
+	padding: 5px;
+	color: #2D4B93;
+	text-align: center;
+	border: 10px double #2D4B93;
+	border-bottom: none;
+	background-color: #E89E12;
+}
+
+.photo 
+{
+	margin: 20px 0;
+	width: 400px;
+	background: url(../images/background-kids.jpg) repeat;
+	padding: 10px;
+	border-radius: 5px;
+	border: 10px double #E89E12;
+	box-sizing: border-box; /*box-sizing property include the padding and border in an element's total width and height.*/
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	transform: rotate(3deg);
+	transition: 0.3s all linear;
+}
+
+.photo img 
+{
+	flex-basis: 100%;
+	width: 80%;
+	height: 80%;
+	overflow: hidden;
+}
+
+.photo figcaption
+{
+	margin-top: 10px;
+}
+
+.photo:nth-child(even) /*here, the effect applies to elements on "even" positions.*/
+{
+	transform: rotate(-2deg) scale(0.9);
+}
+
+.photo:hover 
+{
+	transition: 0.3s all linear;
+	transform: scale(1.2);
+}
+
+figcaption
+{
+	font-size: 22px;
+	color: #0F257F;
+	text-align: center;
+}
+
+
+
+/* Smartphones (portrait and landscape) */ 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+/*styles*/
+}
+
+/* Tablets (portrait and landscape) */ 
+@media only screen and (min-device-width :768px) and (max-device-width : 1024px) 
+{
+/*styles*/
+}

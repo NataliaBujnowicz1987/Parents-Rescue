@@ -1,0 +1,62 @@
+/* slider CSS - contains additional styles used to set up the sliders -->*/
+
+body
+{
+	font-family: 'Cabin Sketch', cursive;, helvetica, arial;
+}
+
+#container
+{
+	max-width:900px;
+	margin:0 auto;
+	padding-bottom:50px;
+	border: 10px double #E89E12;
+	background-color: #2D4B93;
+}
+
+#banner-fade,
+#banner-slide
+{
+	margin-bottom: auto;
+}
+
+ul.bjqs-controls.v-centered li a
+{
+	display:block;
+	padding:10px;
+	background:#E89E12;
+	color:#2D4B93;
+	text-decoration: none;
+}
+
+ul.bjqs-controls.v-centered li a:hover
+{
+	background:#2D4B93;
+	color:#E89E12;
+}
+
+ol.bjqs-markers li a
+{
+	padding:5px 15px;
+	background:#E89E12;
+	color:#2D4B93;
+	margin:5px;
+	margin-top: 10px;
+	text-decoration: none;
+}
+
+ol.bjqs-markers li.active-marker a,
+ol.bjqs-markers li a:hover
+{
+	background: #999;
+}
+
+p.bjqs-caption
+{
+	background: rgba(255,255,255,0.5);
+}
+
+.secret-source
+{
+	display: none;
+}
